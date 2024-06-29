@@ -1,3 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718933908
+::res://::1719642270
 icon.svg::CompressedTexture2D::9002958121749204682::1717631771::1718323404::1::::<><>::
+main.tscn::PackedScene::8007783633670578983::1718934090::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn
+::res://scenes/::1718934080
+player.tscn::PackedScene::2371097072053885430::1718934080::0::1::::<><>::

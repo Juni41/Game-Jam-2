@@ -1,8 +1,14 @@
-[gd_scene format=3 uid="uid://81tvfpbsj623"]
+[gd_scene load_steps=2 format=3 uid="uid://81tvfpbsj623"]
+
+[ext_resource type="Texture2D" uid="uid://c1oxdkhx2ai42" path="res://assets/character/Char.png" id="1_as0au"]
 
 [node name="Player" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_as0au")
+hframes = 8
+vframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 

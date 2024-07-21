@@ -1,15 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://81tvfpbsj623"]
+[gd_scene load_steps=4 format=3 uid="uid://81tvfpbsj623"]
 
-[ext_resource type="Texture2D" uid="uid://c1oxdkhx2ai42" path="res://assets/character/Char.png" id="1_as0au"]
+[ext_resource type="Texture2D" uid="uid://coqkxbgjy8fta" path="res://assets/character/Char.png" id="1_as0au"]
+[ext_resource type="Script" path="res://assets/character/scripts/character.gd" id="1_cwauo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_htwxk"]
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_cwauo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = ExtResource("1_as0au")
-hframes = 8
+hframes = 9
 vframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.75, 0.75)
+shape = SubResource("CircleShape2D_htwxk")

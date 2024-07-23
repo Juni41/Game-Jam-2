@@ -1,17 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721770514
+::res://::1721772031
 icon.svg::CompressedTexture2D::9002958121749204682::1717631771::1718323404::1::::<><>::
-main.tscn::PackedScene::8007783633670578983::1721731870::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn
-testing.tscn::PackedScene::4519149413533499976::1721731882::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
+main.tscn::PackedScene::8007783633670578983::1721772031::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn
+testing.tscn::PackedScene::4519149413533499976::1721772031::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
 ::res://assets/::1721553864
 ::res://assets/character/::1721553866
 Char.png::CompressedTexture2D::5789163527805560130::1721553659::1721553864::1::::<><>::
-::res://assets/character/scripts/::1721730724
-character.gd::GDScript::-1::1721730724::0::1::::Player<>CharacterBody2D<>::
-::res://scenes/::1721731870
-player.tscn::PackedScene::2371097072053885430::1721731870::0::1::::<><>::uid://coqkxbgjy8fta::::res://assets/character/Char.png<>res://assets/character/scripts/character.gd
-::res://Tilesets/::1721731870
-Grassy.tscn::PackedScene::4730982060083561161::1721731870::0::1::::<><>::uid://gb7j8bbfejs1::::res://Tilesets/Sprites/tileset - simplified.png<>uid://cfas3yupxsmfi::::res://Tilesets/Sprites/tileset - simplified transparent.png
+::res://assets/character/scripts/::1721771472
+character.gd::GDScript::-1::1721771472::0::1::::Player<>CharacterBody2D<>::
+::res://scenes/::1721772031
+player.tscn::PackedScene::2371097072053885430::1721772031::0::1::::<><>::uid://coqkxbgjy8fta::::res://assets/character/Char.png<>res://assets/character/scripts/character.gd
+::res://Tilesets/::1721772090
+Grassy.tscn::PackedScene::4730982060083561161::1721772032::0::1::::<><>::uid://gb7j8bbfejs1::::res://Tilesets/Sprites/tileset - simplified.png<>uid://cfas3yupxsmfi::::res://Tilesets/Sprites/tileset - simplified transparent.png
+props.png::CompressedTexture2D::3952211423745356598::1721772090::1721772091::1::::<><>::
 ::res://Tilesets/Sprites/::1721730872
 props.png::CompressedTexture2D::4790687408214623539::1721730872::1721730872::1::::<><>::
 tileset - simplified transparent.png::CompressedTexture2D::5124929785844977858::1721730869::1721730869::1::::<><>::

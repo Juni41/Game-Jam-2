@@ -1,2 +1,5 @@
 res://scenes/player.tscn
 res://assets/character/scripts/character.gd
+res://testing.tscn
+res://main.tscn
+res://Tilesets/Grassy.tscn

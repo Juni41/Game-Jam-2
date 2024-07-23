@@ -46,6 +46,11 @@ Right={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Char"
+2d_physics/layer_5="Tilemap wall collisions"
+
 [rendering]
 
 renderer/rendering_method="mobile"

@@ -6,6 +6,7 @@
 [node name="Testing" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_soxm2")]
-position = Vector2(249, 138)
+position = Vector2(243, 136)
 
 [node name="Grassy" parent="." instance=ExtResource("2_n83b7")]
+texture_filter = 1

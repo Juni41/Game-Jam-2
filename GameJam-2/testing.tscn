@@ -9,4 +9,3 @@
 position = Vector2(243, 136)
 
 [node name="Grassy" parent="." instance=ExtResource("2_n83b7")]
-texture_filter = 1

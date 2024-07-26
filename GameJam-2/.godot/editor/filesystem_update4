@@ -1,5 +1,6 @@
+res://Tilesets/Grassy.tscn
 res://testing.tscn
 res://main.tscn
 res://scenes/player.tscn
-res://Tilesets/Grassy.tscn
 res://assets/character/scripts/character.gd
+res://Altar.gd

@@ -17,6 +17,7 @@ func _process(_delta):
 	
 	direction.x = Input.get_action_strength("Right") - Input.get_action_strength("Left")
 	direction.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
+	direction = direction.normalized()
 	velocity = direction * move_speed
 	if SetState() == true or SetDirection() == true:
 		UpdateAnimation()

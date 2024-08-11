@@ -131,3 +131,19 @@ scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_figvk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StateMachine" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Idle" type="Control" parent="StateMachine"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Walk" type="Control" parent="StateMachine"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

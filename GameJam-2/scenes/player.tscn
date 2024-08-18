@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://81tvfpbsj623"]
+[gd_scene load_steps=13 format=3 uid="uid://81tvfpbsj623"]
 
 [ext_resource type="Texture2D" uid="uid://coqkxbgjy8fta" path="res://assets/character/Char.png" id="1_as0au"]
 [ext_resource type="Script" path="res://assets/character/scripts/character.gd" id="1_cwauo"]
+[ext_resource type="Script" path="res://assets/character/scripts/player_state_machine.gd" id="3_nbmff"]
+[ext_resource type="Script" path="res://assets/character/scripts/state_idle.gd" id="4_vhguy"]
 
 [sub_resource type="Animation" id="Animation_qrki0"]
 length = 0.001
@@ -137,11 +139,13 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("3_nbmff")
 
 [node name="Idle" type="Control" parent="StateMachine"]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("4_vhguy")
 
 [node name="Walk" type="Control" parent="StateMachine"]
 anchors_preset = 0

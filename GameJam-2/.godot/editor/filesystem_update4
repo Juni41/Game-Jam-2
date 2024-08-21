@@ -1,1 +1,7 @@
 res://scenes/player.tscn
+res://testing.tscn
+res://main.tscn
+res://Tilesets/Grassy.tscn
+res://assets/character/scripts/character.gd
+res://assets/character/scripts/state_walk.gd
+res://assets/character/scripts/state_idle.gd

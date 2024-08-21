@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://81tvfpbsj623"]
+[gd_scene load_steps=14 format=3 uid="uid://81tvfpbsj623"]
 
 [ext_resource type="Script" path="res://assets/character/scripts/character.gd" id="1_cwauo"]
 [ext_resource type="Texture2D" uid="uid://2sgvkggw5200" path="res://assets/character/Sprite sheet.png" id="2_0q64j"]
 [ext_resource type="Script" path="res://assets/character/scripts/player_state_machine.gd" id="3_nbmff"]
 [ext_resource type="Script" path="res://assets/character/scripts/state_idle.gd" id="4_vhguy"]
+[ext_resource type="Script" path="res://assets/character/scripts/state_walk.gd" id="5_g4n7n"]
 
 [sub_resource type="Animation" id="Animation_qrki0"]
 length = 0.001
@@ -152,3 +153,4 @@ script = ExtResource("4_vhguy")
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("5_g4n7n")

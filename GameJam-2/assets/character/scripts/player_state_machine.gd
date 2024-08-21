@@ -1,4 +1,4 @@
-extends Node
+class_name PlayerStateMachine extends Node
 
 var states : Array[ State ]
 var prev_state : State

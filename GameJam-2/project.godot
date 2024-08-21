@@ -49,7 +49,9 @@ Right={
 [layer_names]
 
 2d_physics/layer_1="Char"
+2d_physics/layer_2="CharHurt"
 2d_physics/layer_5="Tilemap wall collisions"
+2d_physics/layer_9="Enemy"
 
 [rendering]
 

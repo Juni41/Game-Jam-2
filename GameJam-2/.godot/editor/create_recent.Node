@@ -1,6 +1,6 @@
+Area2D
 Control
 CollisionShape2D
-Area2D
 Camera2D
 TileMap
 Node2D

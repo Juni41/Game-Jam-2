@@ -1,28 +1,33 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724223783
+::res://::1724227246
 Altar.gd::GDScript::-1::1721983357::0::1::::<>Area2D<>::
 export_presets.cfg::TextFile::-1::1721984852::0::1::::<><>::
 icon.svg::CompressedTexture2D::9002958121749204682::1717631771::1718323404::1::::<><>::
 index.apple-touch-icon.png::CompressedTexture2D::1448038207730352145::1721984852::1722557688::1::::<><>::
 index.icon.png::CompressedTexture2D::1553792989209887582::1721984852::1722557688::1::::<><>::
 index.png::CompressedTexture2D::7665265075976023621::1721984852::1722557688::1::::<><>::
-main.tscn::PackedScene::8007783633670578983::1721984474::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
-testing.tscn::PackedScene::4519149413533499976::1723356720::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
+main.tscn::PackedScene::8007783633670578983::1724227041::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
+testing.tscn::PackedScene::4519149413533499976::1724227041::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
 ::res://assets/::1721553864
 ::res://assets/character/::1724225348
 Char.png::CompressedTexture2D::5789163527805560130::1721553659::1721553864::1::::<><>::
 Sprite sheet.png::CompressedTexture2D::1932659916234103015::1724225348::1724225348::1::::<><>::
 ::res://assets/character/Animations/::1724224694
-::res://assets/character/scripts/::1723358172
-character.gd::GDScript::-1::1723357989::0::1::::Player<>CharacterBody2D<>::
-player_state_machine.gd::GDScript::-1::1723357989::0::1::::<>Node<>::
+::res://assets/character/scripts/::1724227037
+character.gd::GDScript::-1::1724227037::0::1::::Player<>CharacterBody2D<>::
+player_state_machine.gd::GDScript::-1::1724227037::0::1::::PlayerStateMachine<>Node<>::
 state.gd::GDScript::-1::1723357203::0::1::::State<>Node<>::
-state_idle.gd::GDScript::-1::1723358172::0::1::::State_Idle<>State<>::
-::res://scenes/::1723974668
+state_idle.gd::GDScript::-1::1724225967::0::1::::State_Idle<>State<>::
+state_walk.gd::GDScript::-1::1724225787::0::1::::State_Walk<>State<>::
+::res://General Nodes/::1724227117
+::res://General Nodes/Hitbox/::1724227417
+HitBox.tscn::PackedScene::5578732453112002926::1724227147::0::1::::<><>::
+hit_box.gd::GDScript::-1::1724227417::0::1::::HitBox<>Node<>::
+::res://scenes/::1724227041
 altar.tscn::PackedScene::1204703057966182064::1721983357::0::1::::<><>::res://Altar.gd
-player.tscn::PackedScene::2371097072053885430::1723974668::0::1::::<><>::uid://coqkxbgjy8fta::::res://assets/character/Char.png<>res://assets/character/scripts/character.gd<>res://assets/character/scripts/player_state_machine.gd<>res://assets/character/scripts/state_idle.gd
-::res://Tilesets/::1721984474
-Grassy.tscn::PackedScene::4730982060083561161::1721984474::0::1::::<><>::uid://gb7j8bbfejs1::::res://Tilesets/Sprites/tileset - simplified.png<>uid://cfas3yupxsmfi::::res://Tilesets/Sprites/tileset - simplified transparent.png<>uid://caiv6lp58sho2::::res://Tilesets/Sprites/props.png
+player.tscn::PackedScene::2371097072053885430::1724227041::0::1::::<><>::res://assets/character/scripts/character.gd<>uid://2sgvkggw5200::::res://assets/character/Sprite sheet.png<>res://assets/character/scripts/player_state_machine.gd<>res://assets/character/scripts/state_idle.gd
+::res://Tilesets/::1724227041
+Grassy.tscn::PackedScene::4730982060083561161::1724227041::0::1::::<><>::uid://gb7j8bbfejs1::::res://Tilesets/Sprites/tileset - simplified.png<>uid://cfas3yupxsmfi::::res://Tilesets/Sprites/tileset - simplified transparent.png<>uid://caiv6lp58sho2::::res://Tilesets/Sprites/props.png
 props.png::CompressedTexture2D::3952211423745356598::1721772090::1721772091::1::::<><>::
 ::res://Tilesets/Sprites/::1721730872
 props.png::CompressedTexture2D::4790687408214623539::1721730872::1721730872::1::::<><>::

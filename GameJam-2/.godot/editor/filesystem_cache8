@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724227246
+::res://::1724316319
 Altar.gd::GDScript::-1::1721983357::0::1::::<>Area2D<>::
 export_presets.cfg::TextFile::-1::1721984852::0::1::::<><>::
 icon.svg::CompressedTexture2D::9002958121749204682::1717631771::1718323404::1::::<><>::
@@ -19,10 +19,11 @@ player_state_machine.gd::GDScript::-1::1724227037::0::1::::PlayerStateMachine<>N
 state.gd::GDScript::-1::1723357203::0::1::::State<>Node<>::
 state_idle.gd::GDScript::-1::1724225967::0::1::::State_Idle<>State<>::
 state_walk.gd::GDScript::-1::1724225787::0::1::::State_Walk<>State<>::
-::res://General Nodes/::1724227117
-::res://General Nodes/Hitbox/::1724227417
-HitBox.tscn::PackedScene::5578732453112002926::1724227147::0::1::::<><>::
-hit_box.gd::GDScript::-1::1724227417::0::1::::HitBox<>Node<>::
+::res://General Nodes/::1724227465
+::res://General Nodes/Hitbox/::1724227556
+HitBox.tscn::PackedScene::5578732453112002926::1724227556::0::1::::<><>::res://General Nodes/Hitbox/hit_box.gd
+hit_box.gd::GDScript::-1::1724227556::0::1::::HitBox<>Node<>::
+::res://General Nodes/HurtBox/::1724227465
 ::res://scenes/::1724227041
 altar.tscn::PackedScene::1204703057966182064::1721983357::0::1::::<><>::res://Altar.gd
 player.tscn::PackedScene::2371097072053885430::1724227041::0::1::::<><>::res://assets/character/scripts/character.gd<>uid://2sgvkggw5200::::res://assets/character/Sprite sheet.png<>res://assets/character/scripts/player_state_machine.gd<>res://assets/character/scripts/state_idle.gd

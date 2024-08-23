@@ -28,32 +28,34 @@ func _physics_process(delta):
 	
 	
 func SetDirection() -> bool:
-	var new_dir : Vector2 = cardinal_direction
+	var new_dir: Vector2 = cardinal_direction
+	
 	if direction == Vector2.ZERO:
 		return false
+		
 	if direction.y == 0:
-		new_dir = Vector2.LEFT if direction.x < 0 else Vector2.RIGHT
+		new_dir = Vector2.RIGHT if direction.x > 0 else Vector2.LEFT
 	elif direction.x == 0:
-		new_dir = Vector2.UP if direction.y < 0 else Vector2.DOWN
+		new_dir = Vector2.DOWN if direction.y > 0 else Vector2.UP
 		
 	if new_dir == cardinal_direction:
 		return false
 	
 	cardinal_direction = new_dir
-	sprite_2d.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
+	sprite_2d.scale.x = 1 if cardinal_direction == Vector2.RIGHT else -1
 	return true
-	
 
 
-func UpdateAnimation( state : String ) -> void:
-	animation_player.play( state + "_" + "down")
-	pass
-	
+func UpdateAnimation(state: String) -> void:
+	var anim_direction = AnimDirection()
+	animation_player.play(state + "_" + anim_direction)
+
+
 func AnimDirection() -> String:
 	if cardinal_direction == Vector2.DOWN:
 		return "down"
 	elif cardinal_direction == Vector2.UP:
-		return "UP"
+		return "up"
 	else:
 		return "side"
 

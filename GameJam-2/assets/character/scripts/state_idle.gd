@@ -2,6 +2,8 @@ class_name State_Idle extends State
 
 
 @onready var walk : State = $"../Walk"
+@onready var attack : State = $"../Attack"
+
 #when player enters this state
 func Enter() -> void:
 	player.UpdateAnimation("idle")
@@ -24,5 +26,7 @@ func Physics(_delta : float ) -> State:
 
 	#what happens with input events in this state
 func HandleInput( _event :InputEvent ) -> State:
+	if _event.is_action_pressed("Attack"):
+		return attack
 	return null
 	

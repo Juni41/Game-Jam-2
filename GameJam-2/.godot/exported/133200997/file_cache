@@ -1,3 +1,6 @@
-res://main.tscn::62042242a920ff4dece9e7e8a33dbbfe::1721984474::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
-res://scenes/player.tscn::32781cda5081ea26ca3a6ba561a72907::1721984474::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
-res://Tilesets/Grassy.tscn::30e1e19c6d2922908a7a9b7acfcef264::1721984474::res://.godot/exported/133200997/export-cf70dc14af1a438f3e710acc2b6e3915-Grassy.scn
+res://main.tscn::62042242a920ff4dece9e7e8a33dbbfe::1724408284::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://scenes/player.tscn::b26bc2f8cdf894932b011824ce60ebb9::1724408284::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://Tilesets/Grassy.tscn::30e1e19c6d2922908a7a9b7acfcef264::1724408284::res://.godot/exported/133200997/export-cf70dc14af1a438f3e710acc2b6e3915-Grassy.scn
+res://General Nodes/Hitbox/HitBox.tscn::6df7d32fbc6980358a3df788bbb8da7b::1724408284::res://.godot/exported/133200997/export-a5db7ec0d77547252292f410adf76fc4-HitBox.scn
+res://scenes/altar.tscn::a3f690fb9fe89daafe3fe1ec8c117873::1721983357::res://.godot/exported/133200997/export-e09c42372aabda41a812322d780a41cf-altar.scn
+res://testing.tscn::5b2dcd1f6b27a0b26609d5f463343229::1724408284::res://.godot/exported/133200997/export-3ec37790462fad705aedf9fc798a6919-testing.scn

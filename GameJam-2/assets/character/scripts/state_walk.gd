@@ -1,8 +1,10 @@
 class_name State_Walk extends State
 
 @export var move_speed : float = 100.0
+
 @onready var idle : State = $"../Idle"
 @onready var attack : State = $"../Attack"
+
 #when player enters this state
 func Enter() -> void:
 	player.UpdateAnimation("walk")
@@ -21,7 +23,6 @@ func Process(_delta : float) -> State:
 	
 	if player.SetDirection():
 		player.UpdateAnimation("walk")
-	
 	return null
 
 #what happens during the physics process update during this state

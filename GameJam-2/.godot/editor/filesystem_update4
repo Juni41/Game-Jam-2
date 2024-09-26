@@ -3,7 +3,3 @@ res://main.tscn
 res://scenes/player.tscn
 res://Tilesets/Grassy.tscn
 res://General Nodes/Hitbox/HitBox.tscn
-res://assets/character/scripts/state_idle.gd
-res://assets/character/scripts/state_attack.gd
-res://assets/character/scripts/state_walk.gd
-res://assets/character/scripts/character.gd

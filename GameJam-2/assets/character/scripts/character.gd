@@ -3,7 +3,6 @@ class_name Player extends CharacterBody2D
 var cardinal_direction : Vector2 = Vector2.DOWN
 var direction : Vector2 = Vector2.ZERO
 
-
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 @onready var sprite_2d : Sprite2D = $Sprite2D
 @onready var state_machine : PlayerStateMachine = $StateMachine
@@ -15,11 +14,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	
-	direction.x = Input.get_action_strength("Right") - Input.get_action_strength("Left")
-	direction.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
+	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
+	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 	direction = direction.normalized()
-
 	pass
 
 
@@ -34,21 +31,21 @@ func SetDirection() -> bool:
 		return false
 		
 	if direction.y == 0:
-		new_dir = Vector2.RIGHT if direction.x > 0 else Vector2.LEFT
+		new_dir = Vector2.LEFT if direction.x < 0 else Vector2.RIGHT
 	elif direction.x == 0:
-		new_dir = Vector2.DOWN if direction.y > 0 else Vector2.UP
+		new_dir = Vector2.UP if direction.y < 0 else Vector2.DOWN
 		
 	if new_dir == cardinal_direction:
 		return false
 	
 	cardinal_direction = new_dir
-	sprite_2d.scale.x = 1 if cardinal_direction == Vector2.RIGHT else -1
+	sprite_2d.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
 	return true
 
 
-func UpdateAnimation(state: String) -> void:
-	var anim_direction = AnimDirection()
-	animation_player.play(state + "_" + anim_direction)
+func UpdateAnimation( state : String ) -> void:
+	animation_player.play(state + "_" + AnimDirection())
+	pass
 
 
 func AnimDirection() -> String:

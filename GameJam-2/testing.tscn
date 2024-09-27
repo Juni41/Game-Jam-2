@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5ndy3s555psy"]
+[gd_scene load_steps=5 format=3 uid="uid://b5ndy3s555psy"]
 
 [ext_resource type="PackedScene" uid="uid://81tvfpbsj623" path="res://scenes/player.tscn" id="1_soxm2"]
 [ext_resource type="PackedScene" uid="uid://b8nyt3k8pto4p" path="res://Tilesets/Grassy.tscn" id="2_n83b7"]
 [ext_resource type="PackedScene" uid="uid://cdt8sppxv2gof" path="res://Props/Plants/bush.tscn" id="3_ma7k3"]
+[ext_resource type="PackedScene" uid="uid://cxedhs8d557r0" path="res://enemies/slime/slime.tscn" id="4_tuco0"]
 
 [node name="Testing" type="Node2D"]
 y_sort_enabled = true
@@ -49,3 +50,6 @@ position = Vector2(394, 187)
 
 [node name="Player" parent="." instance=ExtResource("1_soxm2")]
 position = Vector2(191, 174)
+
+[node name="Slime" parent="." instance=ExtResource("4_tuco0")]
+position = Vector2(139, 174)

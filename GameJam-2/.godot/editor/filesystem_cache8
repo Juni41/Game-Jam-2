@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1727338588
+::res://::1727413584
 export_presets.cfg::TextFile::-1::1724408683::0::1::::<><>::
 icon.svg::CompressedTexture2D::9002958121749204682::1717631771::1718323404::1::::<><>::
 index.apple-touch-icon.png::CompressedTexture2D::1448038207730352145::1721984852::1722557688::1::::<><>::
 index.icon.png::CompressedTexture2D::1553792989209887582::1721984852::1722557688::1::::<><>::
 index.png::CompressedTexture2D::7665265075976023621::1721984852::1722557688::1::::<><>::
-main.tscn::PackedScene::8007783633670578983::1727337312::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
-testing.tscn::PackedScene::4519149413533499976::1727337312::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
+main.tscn::PackedScene::8007783633670578983::1727413584::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn
+testing.tscn::PackedScene::4519149413533499976::1727413584::0::1::::<><>::uid://81tvfpbsj623::::res://scenes/player.tscn<>uid://b8nyt3k8pto4p::::res://Tilesets/Grassy.tscn<>uid://cdt8sppxv2gof::::res://Props/Plants/bush.tscn
 ::res://assets/::1721553864
 ::res://assets/character/::1727335944
 Char.png::CompressedTexture2D::5789163527805560130::1721553659::1721553864::1::::<><>::
@@ -16,29 +16,32 @@ SpriteSheet_New.png::CompressedTexture2D::2528527147302320821::1724403726::17244
 final spritesheet.png::CompressedTexture2D::6577226187651979350::1727070284::1727070291::1::::<><>::
 ::res://assets/character/Audio/::1727335944
 SwordSwoosh.wav::AudioStreamWAV::7726268439809490875::1727335939::1727335944::1::::<><>::
-::res://assets/character/scripts/::1727337311
+::res://assets/character/scripts/::1727413697
 character.gd::GDScript::-1::1727072448::0::1::::Player<>CharacterBody2D<>::
 player_state_machine.gd::GDScript::-1::1724227037::0::1::::PlayerStateMachine<>Node<>::
+PlayerInteractionsHost.gd::GDScript::-1::1727413697::0::1::::<>Node<>::
 state.gd::GDScript::-1::1723357203::0::1::::State<>Node<>::
-state_attack.gd::GDScript::-1::1727337311::0::1::::State_Attack<>State<>::
+state_attack.gd::GDScript::-1::1727413583::0::1::::State_Attack<>State<>::
 state_idle.gd::GDScript::-1::1727337182::0::1::::State_Idle<>State<>::
 state_walk.gd::GDScript::-1::1727337185::0::1::::State_Walk<>State<>::
 ::res://General Nodes/::1724403747
 SpriteSheet_New.png::CompressedTexture2D::4175656698459397182::1724403747::1724403747::1::::<><>::
-::res://General Nodes/Hitbox/::1727337658
-HitBox.tscn::PackedScene::5578732453112002926::1727337313::0::1::::<><>::res://General Nodes/Hitbox/hit_box.gd
+::res://General Nodes/Hitbox/::1727413584
+HitBox.tscn::PackedScene::5578732453112002926::1727413584::0::1::::<><>::res://General Nodes/Hitbox/hit_box.gd
 hit_box.gd::GDScript::-1::1727337658::0::1::::HitBox<>Area2D<>::
-::res://General Nodes/HurtBox/::1727338182
-Hurt_box.gd::GDScript::-1::1727338182::0::1::::<>Node<>::
-Hurt_box.tscn::PackedScene::8023013876880294632::1727337658::0::1::::<><>::
+::res://General Nodes/HurtBox/::1727413584
+Hurt_box.gd::GDScript::-1::1727338632::0::1::::HurtBox<>Area2D<>::
+Hurt_box.tscn::PackedScene::8023013876880294632::1727413584::0::1::::<><>::res://General Nodes/HurtBox/Hurt_box.gd
 ::res://Props/::1727338588
-::res://Props/Plants/::1727338588
+::res://Props/Plants/::1727413584
+bush.gd::GDScript::-1::1727339318::0::1::::Bush<>Node2D<>::
 bush.png::CompressedTexture2D::5601910127218417866::1727338556::1727338588::1::::<><>::
-::res://scenes/::1727337312
+bush.tscn::PackedScene::5024667692775481281::1727413584::0::1::::<><>::uid://cl2uv2npyke7k::::res://Props/Plants/bush.png<>res://Props/Plants/bush.gd<>uid://clqm55fky5kkc::::res://General Nodes/Hitbox/HitBox.tscn
+::res://scenes/::1727413584
 altar.tscn::PackedScene::1204703057966182064::1721983357::0::1::::<><>::res://Altar.gd
-player.tscn::PackedScene::2371097072053885430::1727337312::0::1::::<><>::res://assets/character/scripts/character.gd<>uid://c0yb7pinpkut7::::res://assets/character/Animations/final spritesheet.png<>res://assets/character/scripts/player_state_machine.gd<>res://assets/character/scripts/state_idle.gd<>res://assets/character/scripts/state_walk.gd<>res://assets/character/scripts/state_attack.gd<>uid://dicwrokwervkl::::res://assets/character/Audio/SwordSwoosh.wav
-::res://Tilesets/::1727337313
-Grassy.tscn::PackedScene::4730982060083561161::1727337312::0::1::::<><>::uid://gb7j8bbfejs1::::res://Tilesets/Sprites/tileset - simplified.png<>uid://cfas3yupxsmfi::::res://Tilesets/Sprites/tileset - simplified transparent.png<>uid://caiv6lp58sho2::::res://Tilesets/Sprites/props.png
+player.tscn::PackedScene::2371097072053885430::1727413584::0::1::::<><>::res://assets/character/scripts/character.gd<>uid://c0yb7pinpkut7::::res://assets/character/Animations/final spritesheet.png<>res://assets/character/scripts/player_state_machine.gd<>res://assets/character/scripts/state_idle.gd<>res://assets/character/scripts/state_walk.gd<>res://assets/character/scripts/state_attack.gd<>uid://dicwrokwervkl::::res://assets/character/Audio/SwordSwoosh.wav<>uid://dmkn4psanrxjc::::res://General Nodes/HurtBox/Hurt_box.tscn
+::res://Tilesets/::1727413584
+Grassy.tscn::PackedScene::4730982060083561161::1727413584::0::1::::<><>::uid://gb7j8bbfejs1::::res://Tilesets/Sprites/tileset - simplified.png<>uid://cfas3yupxsmfi::::res://Tilesets/Sprites/tileset - simplified transparent.png<>uid://caiv6lp58sho2::::res://Tilesets/Sprites/props.png
 props.png::CompressedTexture2D::3952211423745356598::1721772090::1721772091::1::::<><>::
 ::res://Tilesets/Sprites/::1721730872
 props.png::CompressedTexture2D::4790687408214623539::1721730872::1721730872::1::::<><>::

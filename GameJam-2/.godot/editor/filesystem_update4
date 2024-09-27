@@ -1,13 +1,10 @@
+res://scenes/player.tscn
 res://testing.tscn
 res://main.tscn
-res://scenes/player.tscn
 res://Tilesets/Grassy.tscn
 res://General Nodes/Hitbox/HitBox.tscn
-res://assets/character/scripts/state_walk.gd
-res://assets/character/scripts/state_attack.gd
-res://assets/character/scripts/state_idle.gd
-res://General Nodes/Hitbox/hit_box.gd
-res://General Nodes/HurtBox/Hurt_box.gd
-res://Props/Plants/bush.tscn
-res://Props/Plants/bush.gd
 res://General Nodes/HurtBox/Hurt_box.tscn
+res://Props/Plants/bush.tscn
+res://assets/character/scripts/state_attack.gd
+res://assets/character/scripts/PlayerInteractionsHandler.gd
+res://assets/character/scripts/character.gd

@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=480
 window/size/viewport_height=270
+window/size/resizable=false
 window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="viewport"
@@ -53,6 +54,7 @@ attack={
 
 [layer_names]
 
+2d_render/layer_9="enemy"
 2d_physics/layer_1="Char"
 2d_physics/layer_2="CharHurt"
 2d_physics/layer_5="Tilemap wall collisions"

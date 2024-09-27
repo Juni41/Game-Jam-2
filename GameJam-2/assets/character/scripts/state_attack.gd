@@ -6,6 +6,7 @@ var attacking : bool = false
 @onready var audio : AudioStreamPlayer2D = $"../../Sound/AudioStreamPlayer2D"
 @onready var idle : State = $"../Idle"
 @onready var walk : State = $"../Walk"
+@onready var hurt_box : HurtBox = $"../../Interactions/HurtBox"
 
 #when player enters this state
 func Enter() -> void:
@@ -16,12 +17,16 @@ func Enter() -> void:
 	audio.pitch_scale = randf_range( 0.9, 1.1 )
 	audio.play()
 	attacking = true
+	
+	await get_tree().create_timer( 0.0754 ).timeout
+	hurt_box.monitoring = true
 	pass
 
 #when player exits this state
 func Exit() -> void:
 	animation_player.animation_finished.disconnect( EndAttack )
 	attacking = false
+	hurt_box.monitoring = false
 	pass
 
 #what happens during the procces update in this state

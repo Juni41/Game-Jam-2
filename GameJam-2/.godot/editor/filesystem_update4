@@ -8,3 +8,4 @@ res://Props/Plants/bush.tscn
 res://assets/character/scripts/state_attack.gd
 res://assets/character/scripts/PlayerInteractionsHandler.gd
 res://assets/character/scripts/character.gd
+res://enemies/slime/slime.tscn

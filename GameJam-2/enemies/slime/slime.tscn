@@ -1,26 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cxedhs8d557r0"]
+[gd_scene load_steps=13 format=3 uid="uid://cxedhs8d557r0"]
 
 [ext_resource type="Texture2D" uid="uid://dqn1153pywbp8" path="res://enemies/slime/slimesheet.png" id="1_kjjp5"]
+[ext_resource type="Script" path="res://enemies/scripts/enemy_state_machine.gd" id="2_7agjj"]
+[ext_resource type="Script" path="res://enemies/scripts/states/enemy_state_idle.gd" id="3_nd2lw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_algn1"]
 radius = 6.0
-
-[sub_resource type="Animation" id="Animation_14woa"]
-resource_name = "idle_down"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3]
-}
 
 [sub_resource type="Animation" id="Animation_28f4o"]
 length = 0.001
@@ -37,9 +22,10 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_hjg3t"]
-resource_name = "idle_up"
+[sub_resource type="Animation" id="Animation_14woa"]
+resource_name = "idle_down"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -70,6 +56,22 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3]
 }
 
+[sub_resource type="Animation" id="Animation_hjg3t"]
+resource_name = "idle_up"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
 [sub_resource type="Animation" id="Animation_yjt4o"]
 resource_name = "walk_down"
 length = 0.85
@@ -86,8 +88,8 @@ tracks/0/keys = {
 "values": [14, 15, 16, 17, 18, 19, 20, 21, 22]
 }
 
-[sub_resource type="Animation" id="Animation_pykxb"]
-resource_name = "walk_up"
+[sub_resource type="Animation" id="Animation_3womv"]
+resource_name = "walk_side"
 length = 0.85
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -102,8 +104,8 @@ tracks/0/keys = {
 "values": [14, 15, 16, 17, 18, 19, 20, 21, 22]
 }
 
-[sub_resource type="Animation" id="Animation_3womv"]
-resource_name = "walk_side"
+[sub_resource type="Animation" id="Animation_pykxb"]
+resource_name = "walk_up"
 length = 0.85
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -147,3 +149,16 @@ shape = SubResource("CircleShape2D_algn1")
 libraries = {
 "": SubResource("AnimationLibrary_25ken")
 }
+
+[node name="EnemyStateMachine" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_7agjj")
+
+[node name="Idle" type="Control" parent="EnemyStateMachine"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_nd2lw")

@@ -14,13 +14,15 @@ var invulnerable : bool = false
 
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 @onready var sprite_2d : Sprite2D = $Sprite2D
-#@onready var hit_box : HitBox = $HitBox
-#@onready var state_machine : EnemyStateMachine = $EnemyStateMachine
+@onready var hit_box : HitBox = $HitBox
+@onready var state_machine : EnemyStateMachine = $EnemyStateMachine
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	state_machine.initialize( self )
+	player = PlayerManager.player
+	pass 
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,7 +33,7 @@ func _physics_process(_delta):
 	move_and_slide()
 
 func SetDirection( _new_direction : Vector2 ) -> bool:
-	direction = new_direction
+	direction = _new_direction
 	if direction == Vector2.ZERO:
 		return false
 		
@@ -45,3 +47,16 @@ func SetDirection( _new_direction : Vector2 ) -> bool:
 	direction_changed.emit( new_dir )
 	sprite_2d.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
 	return true
+
+
+func UpdateAnimation( state : String ) -> void:
+	animation_player.play(state + "_" + AnimDirection())
+	pass
+
+func AnimDirection() -> String:
+	if cardinal_direction == Vector2.DOWN:
+		return "down"
+	elif cardinal_direction == Vector2.UP:
+		return "up"
+	else:
+		return "side"

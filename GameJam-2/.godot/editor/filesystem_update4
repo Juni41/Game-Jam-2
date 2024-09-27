@@ -1,12 +1,14 @@
-res://scenes/player.tscn
+res://enemies/scripts/enemy_state_machine.gd
+res://enemies/scripts/states/enemy_state.gd
+res://enemies/scripts/enemy.gd
+res://enemies/slime/slime.tscn
 res://testing.tscn
 res://main.tscn
+res://scenes/player.tscn
 res://Tilesets/Grassy.tscn
 res://General Nodes/Hitbox/HitBox.tscn
 res://General Nodes/HurtBox/Hurt_box.tscn
 res://Props/Plants/bush.tscn
-res://assets/character/scripts/state_attack.gd
-res://assets/character/scripts/PlayerInteractionsHandler.gd
 res://assets/character/scripts/character.gd
-res://enemies/slime/slime.tscn
-res://enemies/scripts/enemy.gd
+res://GLOBAL/global_player_manager.gd
+res://enemies/scripts/states/enemy_state_idle.gd

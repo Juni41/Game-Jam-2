@@ -1,3 +1,4 @@
+Control
 AnimationPlayer
 CollisionShape2D
 Sprite2D
@@ -9,5 +10,4 @@ StaticBody2D
 Area2D
 AudioStreamPlayer2D
 AnimatedSprite2D
-Control
 TileMap
